@@ -10,11 +10,9 @@ class Solution:
         #return(sum(new_list))
 
         # Enklere kode
-        part_sum = 0
         total = 0
         for c in range(len(s) - 1):
-            part_sum = abs(ord(s[c]) - ord(s[c+1]))
-            total += part_sum
+            total += abs(ord(s[c]) - ord(s[c+1]))
             #print(part_sum)
             #print(total)
         return total
